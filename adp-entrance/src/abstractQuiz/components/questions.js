@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
-
-import abstractQuestions from './abstractQuiz/components/questions';
-import abstractAnswers from './abstractQuiz/components/answers';
-import devQuestions from './devQuiz/components/questions';
-import devAnswers from './devQuiz/components/answers';
 
 class App extends Component {
   constructor(props){
@@ -20,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-  var jsonData = require("./quiz.json");
+var jsonData = require("../../quiz.json");
   console.log(jsonData.quizzes[1].title)
   let abstractTitle = [jsonData.quizzes[0].title];
   let devTitle = [jsonData.quizzes[1].title];
