@@ -1,4 +1,6 @@
+// if value is true add to score and move to next else return sorry try again
 import React, { Component } from 'react';
+import './styles.css';
 
 class App extends Component {
   constructor(props){

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles.css';
 
 class App extends Component {
   constructor(props){
@@ -14,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-  var jsonData = require("../../quiz.json");
+var jsonData = require("../../quiz.json");
   console.log(jsonData.quizzes[1].title)
   let abstractTitle = [jsonData.quizzes[0].title];
   let devTitle = [jsonData.quizzes[1].title];
